@@ -22,6 +22,12 @@ repositories {
 	mavenCentral()
 }
 
+flyway {
+    url = "jdbc:postgresql://db-postgresql-fra1-66973-do-user-15216354-0.c.db.ondigitalocean.com:25060/defaultdb?sslmode=require"
+    user = "doadmin"
+    password = "AVNS_1-2xNLdfjSLS4ZN5asq" 
+}
+
 dependencies {
 	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     implementation 'org.springframework.boot:spring-boot-starter-security:3.0.4'
