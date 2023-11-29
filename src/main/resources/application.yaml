@@ -1,0 +1,19 @@
+security:
+  jwt:
+    secret-key: secretkeydevbridgesourceryacademybackendedvinas12345678
+
+spring:
+  flyway:
+    enabled: false
+    locations: classpath:/db/migration
+  datasource:
+    url: "jdbc:postgresql://db-postgresql-fra1-66973-do-user-15216354-0.c.db.ondigitalocean.com:25060/defaultdb?sslmode=require"
+    username: "doadmin"
+    password: "AVNS_1-2xNLdfjSLS4ZN5asq"  
+
+mybatis:
+  print:
+    mapper-locations: classpath:/mapper/*.xml
+
+server:
+  port: 25060
