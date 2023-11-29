@@ -35,7 +35,7 @@ public class SecurityConfig {
             .requestMatchers("/", "/login").permitAll()
             .requestMatchers("/", "/register").permitAll()
            // .requestMatchers("/topic/{id}").hasAuthority("Admin")
-            .anyRequest().permitAll();
+            .anyRequest().authenticated();
         return http.build();
     }
 
